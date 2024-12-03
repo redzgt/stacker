@@ -1,0 +1,54 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>Stackers Game</title>
+    
+    <meta name="description" content="A game that copies the game at Cici's pizza">
+    <meta name="keywords" content="mike stepp,stepp,ucsd,javascript,game,cicis,cici,stacker,stackers">
+    <script type="text/javascript" src="js/stackers.js"> </script>
+    <link href="css/stackers.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      window.onload = function(e) {
+         var squares = document.getElementById("squares");
+         Stackers.init(squares);
+         return true;
+      };
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="squares"></div> 
+      <div class="statusbar" id="buttonbar">
+        <input type="button" class="startbutton" id="startbutton" value="Start"><br>
+        <span id="status">
+      </span></div>
+      <div id="windiv"><img src="images/winner.gif" alt="You win!"></div>
+      <div id="losediv"><img src="images/loser.gif" alt="You lose!"></div>
+      <div class="instructions">
+         <span class="heading">Stackers!</span><br>
+         <span class="intro">
+
+           This is a game to test your reflexes. The bar will go from
+           left to right and back until you press the <span style="font-weight:bold;">spacebar</span> to drop the
+           bar. In the bottom row, you can drop the bar wherever you
+           want. In any higher row, you must try to drop the bar
+           directly above where it was in the row below. If some cells
+           of the bar are above open space, those cells will fall off
+           and you will have a smaller bar to use from then on. If you
+           lose all three cells, you lose. As you progress to higher
+           rows, the bar will move faster. The goal is to reach the
+           top row and drop the bar without losing all the cells in
+           your bar.
+
+           <br><br>
+         </span>
+      </div>
+    </div>
+
+    <script src="js/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      _uacct = "UA-2752641-1";
+      urchinTracker();
+    </script>
+  
+
+</body></html>
